@@ -12,43 +12,39 @@ Built and evaluated several machine learning models to predict credit risk using
 - - -
 ### Resampling
 
-Use the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to resample the LendingClub data and build and evaluate logistic regression classifiers using the resampled data.
-
-To begin:
+Used the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to resample the LendingClub data. Built and evaluated logistic regression classifiers using the resampled data.
 
 1. Read the CSV into a DataFrame.
 
-2. Split the data into Training and Testing sets.
+2. Split data into Training and Testing sets.
 
-3. Scale the training and testing data using the `StandardScaler` from `sklearn.preprocessing`.
+3. Scaled the training and testing data using the `StandardScaler` from `sklearn.preprocessing`.
 
-4. Use the provided code to run a Simple Logistic Regression:
+4. Used the provided code to run a Simple Logistic Regression:
     * Fit the `logistic regression classifier`.
     * Calculate the `balanced accuracy score`.
     * Display the `confusion matrix`.
     * Print the `imbalanced classification report`.
 
-Next you will:
+# Oversampled Algorithmic Data 
 
-1. Oversample the data using the `Naive Random Oversampler` and `SMOTE` algorithms.
+1. Oversampled the data using the `Naive Random Oversampler` and `SMOTE` algorithms.
 
-2. Undersample the data using the `Cluster Centroids` algorithm.
+2. Undersampled the data using the `Cluster Centroids` algorithm.
 
-3. Over- and undersample using a combination `SMOTEENN` algorithm.
+3. Over- and undersampled using a combination `SMOTEENN` algorithm.
 
+# Training Resampled Data
 
-For each of the above, you will need to:
+1. Trained a `logistic regression classifier` from `sklearn.linear_model` using the resampled data.
 
-1. Train a `logistic regression classifier` from `sklearn.linear_model` using the resampled data.
+2. Calculated the `balanced accuracy score` from `sklearn.metrics`.
 
-2. Calculate the `balanced accuracy score` from `sklearn.metrics`.
+3. Displayed the `confusion matrix` from `sklearn.metrics`.
 
-3. Display the `confusion matrix` from `sklearn.metrics`.
+4. Printed the `imbalanced classification report` from `imblearn.metrics`.
 
-4. Print the `imbalanced classification report` from `imblearn.metrics`.
-
-
-Use the above to answer the following questions:
+Used the above to answer the following questions:
 
 * Which model had the best balanced accuracy score?
 >
