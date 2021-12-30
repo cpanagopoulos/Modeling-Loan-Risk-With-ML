@@ -58,31 +58,9 @@ Use the above to answer the following questions:
 
 ### Ensemble Learning
 
-In this section, you will train and compare two different ensemble classifiers to predict loan risk and evaluate each model. You will use the [Balanced Random Forest Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html) and the [Easy Ensemble Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html). Refer to the documentation for each of these to read about the models and see examples of the code.
+In this section, we trained and compared two different ensemble classifiers to predict loan risk and evaluate each model. We used the [Balanced Random Forest Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html) and the [Easy Ensemble Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html).
 
-To begin:
-
-1. Read the data into a DataFrame using the provided starter code.
-
-2. Split the data into training and testing sets.
-
-3. Scale the training and testing data using the `StandardScaler` from `sklearn.preprocessing`.
-
-
-Then, complete the following steps for each model:
-
-1. Train the model using the quarterly data from LendingClub provided in the `Resource` folder.
-
-2. Calculate the balanced accuracy score from `sklearn.metrics`.
-
-3. Display the confusion matrix from `sklearn.metrics`.
-
-4. Generate a classification report using the `imbalanced_classification_report` from imbalanced learn.
-
-5. For the balanced random forest classifier only, print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
-
-
-Use the above to answer the following questions:
+# Project Review Questions
 
 * Which model had the best balanced accuracy score?
 
