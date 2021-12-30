@@ -1,30 +1,15 @@
-# Unit 11 - Risky Business
+# Using Machine Learning to Evaluate Loan Applicant Risk
  
 ![Credit Risk](Images/credit-risk.jpg)
 
 ## Background
 
-Mortgages, student and auto loans, and debt consolidation are just a few examples of credit and loans that people seek online. Peer-to-peer lending services such as Loans Canada and Mogo let investors loan people money without using a bank. However, because investors always want to mitigate risk, a client has asked that you help them predict credit risk with machine learning techniques.
-
-In this assignment you will build and evaluate several machine learning models to predict credit risk using data you'd typically see from peer-to-peer lending services. Credit risk is an inherently imbalanced classification problem (the number of good loans is much larger than the number of at-risk loans), so you will need to employ different techniques for training and evaluating models with imbalanced classes. You will use the imbalanced-learn and Scikit-learn libraries to build and evaluate models using the two following techniques:
+Built and evaluated several machine learning models to predict credit risk using data typically seen from peer-to-peer lending services. Credit risk is an inherently imbalanced classification problem (the number of good loans is much larger than the number of at-risk loans), We used different techniques for training and evaluating models with imbalanced classes. We used the imbalanced-learn and Scikit-learn libraries to build and evaluate models using the two following techniques:
 
 1. [Resampling](#Resampling)
 2. [Ensemble Learning](#Ensemble-Learning)
 
 - - -
-
-## Files
-
-[Resampling Starter Notebook](Starter_Code/credit_risk_resampling.ipynb)
-
-[Ensemble Starter Notebook](Starter_Code/credit_risk_ensemble.ipynb)
-
-[Lending Club Loans Data](Resources/LoanStats_2019Q1.csv.zip)
-
-- - -
-
-## Instructions
-
 ### Resampling
 
 Use the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to resample the LendingClub data and build and evaluate logistic regression classifiers using the resampled data.
@@ -108,84 +93,3 @@ Use the above to answer the following questions:
 * What are the top three features?
 
 - - -
-
-### Hints and Considerations
-
-Use the quarterly data from the LendingClub data provided in the `Resources` folder. Keep the file in the zipped format and use the starter code to read the file.
-
-Refer to the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/) and [scikit-learn](https://scikit-learn.org/stable/) official documentation for help with training the models. Remember that these models all use the model->fit->predict API.
-
-For the ensemble learners, use 100 estimators for both models.
-
-### Submission
-
-* Create Jupyter notebooks for the homework and host the notebooks on GitHub.
-
-* Include a markdown that summarizes your homework and include this report in your GitHub repository.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
-- - -
-
-### Requirements
-
-#### Resampling  (20 points)
-
-##### To receive all points, your code must:
-
-* Oversample the data using the Naive Random Oversampler and SMOTE algorithms. (5 points)
-* Undersample the data using the Cluster Centroids algorithm. (5 points)
-* Oversample and undersample the data using the SMOTEENN algorithim. (5 points)
-* Generate the Balance Accuracy Score, Confusion Matrix and Classification Report for all of the above methods. (5 points)
-#### Classification Analysis - Resampling  (15 points)
-
-##### To receive all points, your code must:
-
-* Determine which resampling model has the Best Balanced Accuracy Score. (5 points)
-* Determine which resampling model has the Best Recall Score Model. (5 points)
-* Determine which resampling model has the Best Geometric Mean Score. (5 points)
-
-#### Ensemble Learning  (20 points)
-
-##### To receive all points, your code must:
-
-* Train the Balanced Random Forest and Easy ensemble Classifiers using the Quarterly Data. (4 points)
-* Calculate the Balance Accuracy Score using sklearn.metrics. (4 points)
-* Print the Confusion Matrix using sklearn.metrics. (4 points)
-* Generate the Classification Report using the `imbalanced_classification_report` from imbalanced learn. (4 points)
-* Print the Feature Importance with the Feature Score, sorted in descending order, for the Balanced Random Forest Classifier. (4 points)
-
-#### Classification Analysis - Ensemble Learning  (15 points)
-
-##### To receive all points, your code must:
-
-* Determine which ensemble model has the Best Balanced Accuracy Score. (4 points)
-* Determine which ensemble model has the Best Recall Score. (4 points)
-* Determine which ensemble model has the Best Geometric Mean Score. (4 points)
-* Determine the Top Three Features. (3 points)
-
-#### Coding Conventions and Formatting (10 points)
-
-##### To receive all points, your code must:
-
-* Place imports at the beginning of the file, just after any module comments and docstrings and before module globals and constants. (3 points)
-* Name functions and variables with lowercase characters and with words separated by underscores. (2 points)
-* Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
-* Use concise logic and creative engineering where possible. (2 points)
-
-#### Deployment and Submission (10 points)
-
-##### To receive all points, you must:
-
-* Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (5 points)
-* Include appropriate commit messages in your files. (5 points)
-
-#### Code Comments (10 points)
-
-##### To receive all points, your code must:
-
-* Be well commented with concise, relevant notes that other developers can understand. (10 points)
-
-- - -
-
-© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
