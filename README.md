@@ -10,7 +10,7 @@ Built and evaluated several machine learning models to predict credit risk using
 2. [Ensemble Learning](#Ensemble-Learning)
 
 - - -
-### Resampling
+## Resampling
 
 Used the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to resample the LendingClub data. Built and evaluated logistic regression classifiers using the resampled data.
 
@@ -26,7 +26,7 @@ Used the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to 
     * Display the `confusion matrix`.
     * Print the `imbalanced classification report`.
 
-# Oversampled Algorithmic Data 
+## Oversampled Algorithmic Data 
 
 1. Oversampled the data using the `Naive Random Oversampler` and `SMOTE` algorithms.
 
@@ -34,7 +34,7 @@ Used the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to 
 
 3. Over- and undersampled using a combination `SMOTEENN` algorithm.
 
-# Training Resampled Data
+## Training Resampled Data
 
 1. Trained a `logistic regression classifier` from `sklearn.linear_model` using the resampled data.
 
@@ -47,23 +47,31 @@ Used the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to 
 Used the above to answer the following questions:
 
 * Which model had the best balanced accuracy score?
->
+
+> The oversampling model had the best balanced accuracy score.
+
 * Which model had the best recall score?
->
+
+> It was a tie across the models because they all scored 99%.
+
 * Which model had the best geometric mean score?
 
-### Ensemble Learning
+*  The oversampling, SMOTE, and combined models all had a score of 99%.
+
+## Ensemble Learning
 
 In this section, we trained and compared two different ensemble classifiers to predict loan risk and evaluate each model. We used the [Balanced Random Forest Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html) and the [Easy Ensemble Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html).
 
-# Project Review Questions
+## Project Review Questions
 
 * Which model had the best balanced accuracy score?
 
+> The Easy Ensemble model had the best balanced accuracy score.
+
 * Which model had the best recall score?
+
+> Both models scored a recall score of .74.
 
 * Which model had the best geometric mean score?
 
-* What are the top three features?
-
-- - -
+> Both models scored .82.
